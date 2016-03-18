@@ -1,0 +1,13 @@
+public class github {
+
+	public static void main(String[] args) {
+		double[] numbers = { 1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+		System.out.println("Median " + median(numbers) + " | Mode "
+				+ mode(numbers) + " | Mean " + mean(numbers));
+
+	}
+	
+	
+	
+}
