@@ -7,6 +7,15 @@ public class github {
 				+ mode(numbers) + " | Mean " + mean(numbers));
 
 	}
+	public static double median(double[] num) {
+		int middle = num.length / 2;
+		if (num.length % 2 == 1) {
+			return num[middle];
+		} else {
+			return (num[middle - 1] + num[middle]) / 2.0;
+		}
+	}
+	
 	
 	
 	
