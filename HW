@@ -15,7 +15,24 @@ public class github {
 			return (num[middle - 1] + num[middle]) / 2.0;
 		}
 	}
-	
+	public static int mode(double[] num) {
+		int maxValue = 0;
+		int maxCount = 0;
+
+		for (int i = 0; i < num.length; ++i) {
+			int count = 0;
+			for (int j = 0; j < num.length; ++j) {
+				if (num[j] == num[i])
+					++count;
+			}
+			if (count > maxCount) {
+				maxCount = count;
+				maxValue = (int) num[i];
+			}
+		}
+
+		return maxValue;
+	}
 	
 	
 	
